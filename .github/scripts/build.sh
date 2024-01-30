@@ -21,7 +21,6 @@ cd ${ROOT_DIR}
 mkdir -p repo
 mv ~/.m2/repository/* repo
 
-cd $GITHUB_WORKSPACE/repo
 git config --local user.email "actions@github.com"
 git config --local user.name "GitHub Actions"
 git add repo/**
