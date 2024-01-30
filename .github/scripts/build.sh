@@ -21,8 +21,7 @@ cd ${ROOT_DIR}
 mkdir -p repo
 mv ~/.m2/repository/* repo
 
-git config --local user.email "actions@github.com"
-git config --local user.name "GitHub Actions"
+git config --local user.email "github-action@users.noreply.github.com"
+git config --local user.name "GitHub Action"
 git add repo/**
-git commit --amend -m "Build $GITHUB_SHA" || exit 0   # do not error if nothing to commit.
-git push --force
+git commit -m "build aar"
